@@ -1,0 +1,5 @@
+kreas
+tensorflow-gpu
+sympy
+pandas
+matplotlib

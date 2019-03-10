@@ -12,8 +12,9 @@ import scipy.io as sio
 import numpy as np
 import time
 import os
-sys.path.append(os.payh.abaspath("../FullSpecturm"))
-from FullSpecturm import fv_hibert
+import sys
+sys.path.append(os.path.abspath("../"))
+from FullSpectrum import fv_hibert
 
 def mat2pb(abspath,output):
     """
@@ -104,4 +105,5 @@ def createlabel(argv):
 #def create_label():
 if __name__ == '__main__':
     #mat2pb('J:/FullSpectrum_CRNN_Tensorflow/IMS_data/E3.mat','J:/FullSpectrum_CRNN_Tensorflow/IMS_data/')
-    createlabel(sys.argv[1:])
+    #createlabel(sys.argv[1:])
+    loaddata(sys.argv[1:])
